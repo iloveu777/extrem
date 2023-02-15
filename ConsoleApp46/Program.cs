@@ -22,7 +22,7 @@ namespace ConsoleApp46
                      indexMax = i;
                  }
              }
-//             Console.WriteLine($"max = {max}\t indexMax = {indexMax}");
+            Console.WriteLine($"max = {max}\t indexMax = {indexMax}");
 
             //минимальное значение
             int min = array[0];
@@ -35,16 +35,16 @@ namespace ConsoleApp46
                     indexMin = j;
                 }
             }
-            //      Console.WriteLine($"max = {min}\t indexMax = {indexMin}");
+                  Console.WriteLine($"max = {min}\t indexMax = {indexMin}");
 
-            int p;
-            p = array[indexMax];
+            int temp;
+            temp = array[indexMax];
             array[indexMax] = array[indexMin];
-            array[indexMin] = p;
+            array[indexMin] = temp;
             
-            foreach(int i in array)
+            for (int i = 0; i < array.Length; i++) 
             {
-                Console.WriteLine($"index{i} = array{array[i]}");
+                Console.WriteLine($" index {i} = {array[i]}");
             }
             
             Console.ReadKey();
